@@ -1,8 +1,0 @@
-var x=10
-console.log("Hello World")
-repl.repl.ignoreUndefined=true
- var x=0
-do{
-x++
-console.log(x)}
-while(x<5)
