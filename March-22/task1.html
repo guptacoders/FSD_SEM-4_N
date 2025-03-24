@@ -1,0 +1,27 @@
+<!-- Display odd 2 numbers on browser using callback -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        function mydisplay(sum){
+            document.getElementById("demo").innerHTML=sum
+        }
+
+        function mycals(n1,n2,mycallback)
+        {
+            var sum = n1+ n2
+
+            mycallback(sum)
+        }
+
+        mycals(12,15,mydisplay)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- write a code that display hello with initial size 15px each should increment in interval of 50ms in blue color and each should stop when font size which is to 50px  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="demo"></p>
+    <button onclick="setInterval(call,50)">Click Here</button>
+
+    <script>
+        var size=15
+       
+        function call()
+        {
+           var obj=   document.getElementById("demo")
+           obj.innerHTML="HELLO"
+           obj.style.color="red"
+           obj.style.fontSize=size+"px"
+    
+        if(size<100){
+            size++
+        }
+    }
+
+    // setInterval(call,30)
+    </script>
+
+
+    
+ </body>
+ </html>
